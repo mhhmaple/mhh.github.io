@@ -1,0 +1,7 @@
+{
+  "url_title": "bài thuyết trình", // the title you provide while creating a new blog, this appears in url
+  "title": "thuyết trình nhóm 2", // main title of blog
+  "sub_title": "", // sub-title of blog
+  "top_image": "", // main image of blog
+  "visible": true // don't worry about this
+}
