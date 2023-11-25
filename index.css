@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow: hidden; /* Hide horizontal scrollbar caused by body margin */
+    background-color: lightblue;
 }
 
 .container {
