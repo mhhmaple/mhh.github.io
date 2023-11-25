@@ -1,18 +1,25 @@
+/* index.css */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow: hidden; /* Hide horizontal scrollbar caused by body margin */
 }
 
+.container {
+    position: relative;
+    height: 100vh;
+}
+
 .background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: ('https://tenor.com/view/herta-kurukuru-gif-17172750523319699764') center center no-repeat;
+    background: url('kurukuru-kururing.gif') center center no-repeat;
     background-size: cover;
-    cursor: pointer; /* Add cursor style to indicate it's clickable */
+    z-index: -1; /* Move the background behind other content */
 }
 
 .message {
@@ -24,15 +31,5 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: floatAnimation 3s infinite alternate; /* Floating animation */
-}
-
-@keyframes floatAnimation {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-10px);
-    }
+    cursor: pointer; /* Add cursor style to indicate it's clickable */
 }
