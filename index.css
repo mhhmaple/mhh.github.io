@@ -1,14 +1,18 @@
 body {
     margin: 0;
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    background-color: lightblue; /* Set the background color for the entire screen */
 }
 
 .message {
     font-size: 2em;
     color: black;
-    background-color: lightblue;
     padding: 20px;
     border-radius: 10px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     animation: floatAnimation 3s infinite alternate; /* Floating animation */
 }
 
