@@ -2,14 +2,12 @@ body {
     margin: 0;
 }
 
-#floating-container {
-    position: absolute;
-}
-
 .message {
     font-size: 2em;
     color: black;
     background-color: lightblue;
     padding: 20px;
     border-radius: 10px;
+    position: absolute;
+    pointer-events: none; /* Ensure the element doesn't interfere with mouse events */
 }
