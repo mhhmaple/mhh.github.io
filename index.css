@@ -9,5 +9,15 @@ body {
     padding: 20px;
     border-radius: 10px;
     position: absolute;
-    pointer-events: none; /* Ensure the element doesn't interfere with mouse events */
+    animation: floatAnimation 3s infinite alternate; /* Floating animation */
+}
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
 }
